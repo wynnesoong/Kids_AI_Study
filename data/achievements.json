@@ -29,17 +29,45 @@
   },
   {
     "id": "module4_done",
-    "icon": "🚀",
-    "title": "Git 冒險家",
-    "description": "完成模組 4：GitHub + Claude Code",
+    "icon": "📊",
+    "title": "數據魔法師",
+    "description": "完成模組 4：Claude 數據 & 文件魔法",
     "condition": { "type": "module_complete", "moduleId": 4 }
   },
   {
     "id": "module5_done",
     "icon": "🎨",
-    "title": "AI 創作者",
-    "description": "完成模組 5：我的 AI 作品",
+    "title": "AI 創意大師",
+    "description": "完成模組 5：Claude AI 創意工作室",
     "condition": { "type": "module_complete", "moduleId": 5 }
+  },
+  {
+    "id": "module6_done",
+    "icon": "📚",
+    "title": "學霸養成",
+    "description": "完成模組 6：Claude AI 學習夥伴",
+    "condition": { "type": "module_complete", "moduleId": 6 }
+  },
+  {
+    "id": "module7_done",
+    "icon": "🖼️",
+    "title": "AI 畫家",
+    "description": "完成模組 7：Gemini 生圖教學",
+    "condition": { "type": "module_complete", "moduleId": 7 }
+  },
+  {
+    "id": "module8_done",
+    "icon": "🚀",
+    "title": "Git 冒險家",
+    "description": "完成模組 8：GitHub + Claude Code",
+    "condition": { "type": "module_complete", "moduleId": 8 }
+  },
+  {
+    "id": "module9_done",
+    "icon": "🏆",
+    "title": "AI 創作者",
+    "description": "完成模組 9：我的 AI 作品",
+    "condition": { "type": "module_complete", "moduleId": 9 }
   },
   {
     "id": "half_way",
@@ -61,6 +89,13 @@
     "title": "三連勝",
     "description": "完成任意 3 個模組",
     "condition": { "type": "modules_completed_count", "value": 3 }
+  },
+  {
+    "id": "six_modules",
+    "icon": "⚡",
+    "title": "超級學霸",
+    "description": "完成任意 6 個模組",
+    "condition": { "type": "modules_completed_count", "value": 6 }
   },
   {
     "id": "night_owl",

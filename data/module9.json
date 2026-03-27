@@ -1,0 +1,284 @@
+{
+  "id": 9,
+  "title": "我的 AI 作品",
+  "subtitle": "用所有學到的工具完成一個作品，部署到網路上",
+  "icon": "🚀",
+  "time": "50 分鐘",
+  "sections": [
+    {
+      "id": "9.1",
+      "title": "選擇專案",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "這是最後一個模組，也是整個課程的高潮 — 你要用前面四個模組學到的所有東西，從零開始完成一個屬於自己的作品，然後部署到網路上，讓任何人都能看到。"
+        },
+        {
+          "type": "paragraph",
+          "text": "以下有四個專案選項可以選，也可以自己提案。每個選項都可以在 30 分鐘內完成，選你最有興趣的："
+        },
+        {
+          "type": "keypoint",
+          "title": "選項 A：我的個人網站",
+          "text": "用 Claude Code 生成一個有設計感的個人網頁（HTML + CSS）。內容包含自我介紹、興趣愛好、作品集（可以放 Scratch 作品連結）。「哇」時刻：部署到 GitHub Pages，拿到 https://你的名字.github.io 的真實網址，用手機打開就能看到自己的網站。"
+        },
+        {
+          "type": "keypoint",
+          "title": "選項 B：AI 互動問答遊戲",
+          "text": "用 Claude Code 做一個主題問答網頁（寶可夢、航太、NBA 等你感興趣的主題都行）。有計分系統、答對答錯的動畫效果、最終成績。題目跟 Claude 一起設計。「哇」時刻：做完交換玩對方的問答遊戲，部署到 GitHub Pages 讓同學也能玩。"
+        },
+        {
+          "type": "keypoint",
+          "title": "選項 C：AI 聊天機器人網頁",
+          "text": "做一個有自訂角色的聊天介面 — 你來設定角色（海盜船長、外星人教授、毒舌美食評論家...什麼都行）。介面有對話氣泡、角色頭像、打字動畫。用預設對話腳本加上隨機回應做出互動感。「哇」時刻：跟自己設計的角色「對話」— 用 AI 做了一個 AI。"
+        },
+        {
+          "type": "keypoint",
+          "title": "選項 D：我的 AI 學習懶人包網站（推薦）",
+          "text": "把五個模組學到的所有東西做成一個精美的知識型網站。包含 AI 介紹、LLM 比較表、Claude 產品圖解、GitHub 教學。設計成可以給其他小朋友看的教學頁面。「哇」時刻：從學生變成老師 — 「我不只學會了，還做了一個教別人的網站」。"
+        },
+        {
+          "type": "highlight",
+          "text": "推薦選項 D！它把你學到的所有東西串在一起，做出來的成品最有意義 — 你從一個 AI 學生變成 AI 老師。但如果你對其他選項更有興趣，就選那個，興趣是最重要的動力。",
+          "variant": "tip"
+        }
+      ]
+    },
+    {
+      "id": "9.2",
+      "title": "用 Claude AI 腦力激盪",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "選好專案後，先別急著動手寫。好的作品需要先規劃。我們用模組 3 學的 Projects 功能，讓 Claude 幫你做腦力激盪。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "用 Claude AI 的 Projects 功能規劃網站結構和內容，練習用 Prompt 工程引導 AI 幫你思考。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "回到 claude.ai 的 Projects 頁面，進入你在模組 3 建立的「我的 AI 學習筆記」專案",
+            "告訴 Claude 你選了哪個專案，以及你想要什麼風格。例如：「我選了 AI 學習懶人包網站，我想要深色主題、科技感、簡潔的設計風格」",
+            "請 Claude 幫你規劃網站結構：「請幫我規劃這個網站的頁面架構，包括每個區塊要放什麼內容」",
+            "來回討論，調整到你滿意為止：「我覺得 LLM 比較的部分可以用表格呈現」、「加一個關於 GitHub 的教學區塊」"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "這裡用到的是模組 3 學的 Prompt 工程技巧 — 給 AI 背景資訊、說清楚你要什麼、不滿意就疊加修正。",
+          "variant": "info"
+        }
+      ]
+    },
+    {
+      "id": "9.3",
+      "title": "確定範圍",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "腦力激盪容易越想越大，但我們只有 30 分鐘的實作時間。這個環節要把想法收斂成可執行的大小。"
+        },
+        {
+          "type": "highlight",
+          "text": "重要原則：寧可做完一個精緻的小東西，也不要做一半的大東西。一個完成的小作品，永遠比一個做一半的大作品更有成就感。",
+          "variant": "info"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "跟講師一起檢視 Claude 規劃的內容，決定哪些是「一定要做的」、哪些是「有時間再做的」",
+            "把範圍縮到 30 分鐘可以完成的大小。一般來說，一個完整的單頁網站（有標題、幾個內容區塊、設計感）就很棒了",
+            "確定最終方向，準備開工"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.4",
+      "title": "開 GitHub Repo",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "開始實作！第一步是在 GitHub 上建立新的 Repository，就像模組 4 學的流程。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "為你的作品建立 GitHub 專案，練習模組 4 學過的 Repo 建立流程。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "在 GitHub 建立新 Repository：點右上角的「+」→ New Repository",
+            "取一個好名字 — 根據你選的專案：選項 A 可以叫 my-first-website；選項 B 可以叫 ai-quiz-game；選項 C 可以叫 chat-bot-page；選項 D 可以叫 ai-study-guide。名字用英文、小寫、短橫線分隔",
+            "Description 寫清楚專案用途，勾選 Initialize with README，選 Public",
+            "點擊 Create Repository",
+            "打開 Terminal，啟動 Claude Code，請它把這個新 Repo clone 到桌面"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.5",
+      "title": "開 Branch 開發",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "記得模組 4.8 學的 Branch 嗎？好的開發習慣是：不在 main 上直接做開發，開一個 branch 來做。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "練習正確的開發習慣 — main 保持乾淨，開發中的東西在 branch 上。這是專業開發者的標準做法。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "請 Claude Code：「幫我建立一個叫 dev 的新 branch 並切換過去」",
+            "確認已經在 dev branch 上：請 Claude Code「確認目前在哪個 branch」",
+            "為什麼要這樣做：如果開發到一半搞砸了，你可以直接刪掉 dev branch，main 上的東西完全不受影響。做好了再合併回 main，main 就只會有「確定沒問題」的版本"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "這個習慣很重要：main = 正式版，dev = 開發版。所有專業軟體團隊都是這樣運作的。",
+          "variant": "info"
+        }
+      ]
+    },
+    {
+      "id": "9.6",
+      "title": "用 Claude Code 開發",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "這是整個課程最有趣的部分 — 你要用自然語言指揮 Claude Code，讓它幫你寫出一個完整的網站。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "用 Claude Code 生成網站程式碼（HTML + CSS + 可能的 JavaScript），練習用精確的 Prompt 引導 AI 開發。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "請 Claude Code 生成初始檔案 — 例如：「幫我建立一個 index.html 檔案，做一個 AI 學習懶人包網站，深色主題，有導覽列、AI 介紹區塊、LLM 比較表格、Claude 產品介紹。設計要簡潔有科技感」",
+            "在瀏覽器打開看效果：請 Claude Code「用瀏覽器打開 index.html」，或者自己在 Finder 找到檔案雙擊打開",
+            "提出修改需求 — 用自然語言告訴 Claude Code 你想改什麼：「把背景顏色改成深藍色」、「加一個導覽列在上面」、「這段文字太小了，放大一點」、「加一個酷炫的動畫效果」、「LLM 比較表格的欄位加上我模組 2 的測試結果」",
+            "每完成一個段落就 Commit 一次 — 請 Claude Code：「幫我 commit 目前的進度，訊息寫『完成導覽列和 AI 介紹區塊』」。養成頻繁存檔的好習慣，這樣如果後面改壞了，可以回到之前的版本",
+            "持續迭代：看效果 → 提出修改 → 看效果 → 提出修改。Prompt 越精確，Claude Code 的結果越貼近你要的。這就是 Prompt 工程的實戰應用"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "過程中不斷強化 Prompt 工程：如果 Claude Code 做出來的不是你要的，不用砍掉重來，用更精確的 Prompt 疊加修正就好。",
+          "variant": "tip"
+        }
+      ]
+    },
+    {
+      "id": "9.7",
+      "title": "合併與部署",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "開發完成了！現在要把作品合併到 main、上傳到 GitHub，然後用 GitHub Pages 部署到網路上。這是最後一步，也是最令人期待的一步。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "完成 Branch 合併、Push 到 GitHub、設定 GitHub Pages，讓你的作品在真實的網路上線。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "確認所有修改都已經 Commit — 請 Claude Code：「檢查有沒有還沒 commit 的修改」。如果有，先 commit",
+            "合併回 main — 請 Claude Code：「切換到 main branch，然後把 dev branch 合併進來」。這就是模組 4.8 學的 Merge 操作",
+            "Push 到 GitHub — 請 Claude Code：「把 main push 到 GitHub」。你的作品現在在雲端了",
+            "設定 GitHub Pages — 這是把你的網站「上線」的關鍵步驟：在瀏覽器打開你的 Repo 頁面 → 點擊上方的 Settings（設定）→ 在左側選單找到 Pages → Source 選擇 main branch → 點擊 Save",
+            "等待部署：GitHub 需要幾分鐘處理，頁面上會顯示進度。當狀態變成綠色的「Your site is live at...」，你的網站就上線了",
+            "打開你的網站 — 網址是 https://你的使用者名稱.github.io/你的專案名稱。用手機也打開看看 — 你做的網站，全世界任何人都能看到了！",
+            "截圖紀念這一刻 — 在電腦和手機上各截一張圖，這是你的第一個上線作品"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "這是整個課程最大的「哇」時刻：你從零開始，用 AI 工具做了一個網站，部署到真實的網路上，拿到了一個真正的網址。傳給朋友、傳給同學，他們打開就能看到你做的東西。",
+          "variant": "success"
+        }
+      ]
+    },
+    {
+      "id": "9.8",
+      "title": "整理學習筆記",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "作品完成了，但學習不只是做完就好。花幾分鐘把五個模組學到的東西整理成筆記，鞏固記憶，也為 GitHub 留下完整的紀錄。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "用 Claude Code 整理學習筆記，練習用 AI 幫忙做知識整理，同時留下完整的學習紀錄。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "回到 my-ai-study-notes Repo — 請 Claude Code 切換到你的筆記專案",
+            "請 Claude Code 幫忙整理筆記：「幫我建立一個 summary.md 檔案，把五個模組學到的東西整理成一份完整的 Markdown 筆記」",
+            "筆記內容建議包含：每個模組的重點（AI 基礎、LLM 比較、Claude 產品、GitHub + Git、作品開發）；自己的心得和感想；LLM 評分表的結論；最喜歡的 Claude 產品是哪個、為什麼；今天做的作品網址",
+            "跟 Claude Code 來回修改，直到你滿意為止",
+            "Commit 並 Push 到 GitHub — 請 Claude Code：「commit 這份筆記，訊息寫『新增五模組學習總結』，然後 push 到 GitHub」"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.9",
+      "title": "回顧與展望",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "打開你的 GitHub Profile 頁面，看看你今天的成果："
+        },
+        {
+          "type": "steps",
+          "items": [
+            "你已經有了自己的 GitHub 帳號和 Profile",
+            "有了至少兩個 Repository（學習筆記 + 作品專案）",
+            "有了多筆 Commit 紀錄 — 這是你開發活動的證明",
+            "有了一個上線的網站 — 全世界都能看到",
+            "學會了使用 Claude AI、Claude Desktop、Projects、Claude Code 等工具",
+            "理解了 Git 的核心概念：Repository、Commit、Push、Pull、Clone、Branch、Merge"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "從零到有，這就是一個開發者的起點。你現在擁有的技能和工具，跟真正的軟體工程師用的是一樣的。"
+        },
+        {
+          "type": "keypoint",
+          "title": "接下來可以做什麼",
+          "text": "繼續改進和擴充你的網站 — 加新功能、改設計、放更多內容。學更多 HTML、CSS，甚至 JavaScript — Claude Code 會是你最好的學習夥伴。探索其他 AI 工具 — 你已經有了評估 AI 的能力，試試看新的工具。在 GitHub 上看看別人的開源專案 — 學習其他開發者怎麼寫程式。最重要的：保持好奇心，持續動手做。"
+        },
+        {
+          "type": "highlight",
+          "text": "今天只是起點。AI 和程式設計的世界非常廣大，而你已經邁出了最重要的第一步。帶著今天學到的能力和好奇心，繼續探索吧。",
+          "variant": "success"
+        }
+      ]
+    }
+  ]
+}

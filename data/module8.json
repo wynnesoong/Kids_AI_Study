@@ -1,0 +1,282 @@
+{
+  "id": 8,
+  "title": "GitHub 冒險 + Claude Code + Branch 專題",
+  "subtitle": "從零搞定 GitHub，學會 Claude Code 與 GitHub 的協作流程，深入理解 Branch",
+  "icon": "🐙",
+  "time": "70 分鐘",
+  "sections": [
+    {
+      "id": "8.1",
+      "title": "GitHub 是什麼",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "GitHub 是全世界最大的程式碼倉庫平台。你可以把它想像成程式設計師的「雲端硬碟」，但它多了一個超能力：版本控制。"
+        },
+        {
+          "type": "paragraph",
+          "text": "什麼是版本控制？想像你在寫一篇報告，每次修改都另存一個新檔案：報告v1、報告v2、報告v3_最終版、報告v3_最終版_真的最終版... 是不是很混亂？版本控制幫你自動管理所有修改紀錄，每一次修改都清楚標記「誰在什麼時候改了什麼」，而且可以隨時回到過去任何一個版本。"
+        },
+        {
+          "type": "highlight",
+          "text": "GitHub 上有超過一億個專案、超過一億個開發者帳號。幾乎所有你用過的軟體，背後都有 GitHub 的影子。",
+          "variant": "info"
+        }
+      ]
+    },
+    {
+      "id": "8.2",
+      "title": "為什麼 GitHub 很重要",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "GitHub 在軟體開發界的地位，就像 YouTube 在影片界的地位 — 幾乎所有人都在用。以下是它重要的三個原因："
+        },
+        {
+          "type": "keypoint",
+          "title": "業界標準",
+          "text": "幾乎所有軟體公司都用 GitHub 管理程式碼。不管是小型新創還是 Google、Microsoft 這樣的巨頭，GitHub 是開發流程的基礎設施。"
+        },
+        {
+          "type": "keypoint",
+          "title": "全球最大的開源社群大本營",
+          "text": "Linux（全球伺服器作業系統的霸主）、Python（最熱門的程式語言之一）、React（Facebook 用的網頁框架）— 這些改變世界的專案都在 GitHub 上，任何人都可以去看它們的程式碼、學習、甚至貢獻。"
+        },
+        {
+          "type": "keypoint",
+          "title": "你的程式作品集",
+          "text": "你的 GitHub 就是你的程式作品集。未來學更多程式、申請實習、甚至找工作，面試官都會看你的 GitHub。今天建立的帳號，就是你開發者生涯的起點。"
+        }
+      ]
+    },
+    {
+      "id": "8.3",
+      "title": "Git vs GitHub",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "很多人會把 Git 和 GitHub 搞混，但它們是不同的東西："
+        },
+        {
+          "type": "comparison",
+          "left": {
+            "title": "Git（工具）",
+            "items": [
+              "版本控制「工具」，裝在你的電腦上",
+              "負責追蹤檔案的修改紀錄",
+              "在本機運作，不需要網路",
+              "就像 Word — 是一個軟體"
+            ]
+          },
+          "right": {
+            "title": "GitHub（平台）",
+            "items": [
+              "版本控制「平台」，在雲端運作",
+              "把 Git 的紀錄放到網路上，讓大家能看到和協作",
+              "需要網路連線，有網頁介面",
+              "就像 Google Docs — 是一個雲端平台"
+            ]
+          }
+        },
+        {
+          "type": "highlight",
+          "text": "簡單記法：Git 是軟體，GitHub 是平台。Git 管版本，GitHub 讓大家一起用 Git。",
+          "variant": "tip"
+        }
+      ]
+    },
+    {
+      "id": "8.4",
+      "title": "核心概念",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "在開始動手之前，先認識幾個核心概念。這些術語會在整個模組中不斷出現，現在花幾分鐘搞清楚，後面操作時就不會卡住。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Repository（Repo）— 專案倉庫",
+          "text": "一個專案的完整資料夾，所有檔案和所有修改紀錄都在裡面。就像一個超級資料夾：除了檔案本身，還記錄了「誰在什麼時候改了什麼」。每個專案對應一個 Repo。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Commit — 存檔點",
+          "text": "一次「存檔點」，附帶一段說明文字描述你做了什麼改動。就像遊戲的存檔：你可以隨時回到任何一個存檔點。好的 Commit 訊息很重要 — 讓未來的你（或其他人）知道當時為什麼做這個改動。例如：「新增自我介紹」比「更新檔案」有用得多。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Push — 上傳到雲端",
+          "text": "把本機電腦上的存檔（Commit）上傳到 GitHub 雲端。上傳之後，其他人就能在 GitHub 網站上看到你的變更。你可以做好幾次 Commit 再一次 Push 上去，就像寫了好幾封信再一次寄出。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Pull — 從雲端下載最新版",
+          "text": "把 GitHub 雲端上最新的版本拉到你的本機電腦。如果有人在 GitHub 上做了修改（或者你在另一台電腦上改了東西），你用 Pull 就能拿到最新版。Push 是上傳，Pull 是下載。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Clone — 完整複製一個專案",
+          "text": "把 GitHub 上的一個 Repo 完整複製到你的本機電腦。跟一般的「下載」不同：Clone 保留了所有版本紀錄和跟 Git 的連結，之後可以 Push 和 Pull。一般下載只拿到檔案，沒有歷史紀錄。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Branch（分支）",
+          "text": "Git 最重要但最容易搞混的概念。簡單說：Branch 讓你「複製一條時間線」出來實驗，原本的版本完全不受影響。我們在 4.8 會用一整個專題來深入學習這個概念。"
+        }
+      ]
+    },
+    {
+      "id": "8.5",
+      "title": "GitHub 註冊與設定",
+      "type": "play",
+      "content": [
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "擁有自己的 GitHub 帳號 — 這是你開發者旅程的起點。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "打開瀏覽器，進入 github.com",
+            "點擊右上角的 Sign Up（註冊）按鈕",
+            "依序填寫：Email 地址 → 設定密碼（要記住！）→ 選擇使用者名稱。使用者名稱的建議：用英文、簡短好記、這會成為你網址的一部分（github.com/你的名字），所以選一個你喜歡的",
+            "完成信箱驗證：去信箱收 GitHub 寄來的驗證信，點擊確認連結",
+            "設定 Profile（個人檔案）：上傳一張大頭貼（或先選一個 GitHub 預設的）；寫一段 Bio（自我介紹），例如：「10 歲，正在學 AI 和程式設計」",
+            "認識 GitHub 介面：首頁（Dashboard）— 顯示你的最新動態和追蹤的專案；你的 Profile 頁面 — 這是別人看到的你，會顯示你所有的公開專案和活動紀錄；Repositories 頁面 — 你所有的專案列表，目前還是空的，馬上就要建立第一個了"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "GitHub 帳號需由家長代為建立或在家長監督下建立，因為服務條款要求使用者年滿 13 歲。",
+          "variant": "warning"
+        }
+      ]
+    },
+    {
+      "id": "8.6",
+      "title": "建立第一個 Repository",
+      "type": "play",
+      "content": [
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "在 GitHub 上建立自己的第一個專案，完成人生第一次 Commit。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "點右上角的「+」按鈕 → 選擇 New Repository",
+            "填寫 Repository 設定：Repository name（專案名稱）：輸入 my-ai-study-notes；Description（描述）：輸入「我的 AI 學習筆記」",
+            "選擇公開或私人：Public（公開）— 全世界都能看到你的專案；Private（私人）— 只有你能看到。建議選 Public，這是學習紀錄，公開分享沒問題，而且公開的專案別人也可以從中學習",
+            "勾選 Initialize this repository with a README — 這很重要！README 是一個專案的「首頁說明」，別人打開你的 Repo 第一個看到的就是它。.gitignore 先跳過，後面會解釋",
+            "點擊綠色的 Create Repository 按鈕 — 你的第一個 Repo 誕生了！",
+            "在 GitHub 網頁上直接編輯 README.md：點擊 README.md 檔案 → 點右上方的鉛筆圖示（Edit this file）",
+            "用 Markdown 語法編輯內容：用 # 寫標題（例如 # 我的 AI 學習筆記），用 - 寫列表，寫下你的名字、這個 Repo 的用途（記錄 AI 學習過程）。Markdown 是一種簡單的格式語法，開發者都用它來寫文件",
+            "點擊右上方的 Commit changes 按鈕 → 在 Commit message 欄位寫：「新增個人簡介」→ 點擊確認"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "你剛剛完成了第一次 Commit！這個修改已經被永久記錄在歷史裡了。點擊 Repo 頁面上的 commits 連結，可以看到你的修改紀錄。",
+          "variant": "success"
+        }
+      ]
+    },
+    {
+      "id": "8.7",
+      "title": "Claude Code 登場 — 與 GitHub 串接",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "現在要把模組 3 預告的 Claude Code 正式派上用場了。你要學會用 Claude Code 操作 Git，體驗真正開發者的工作流程。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "學會用 Claude Code 操作 Git，完成 Clone → 新增檔案 → Commit → Push 的完整流程。這是開發者每天都在做的事。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "打開 Terminal（終端機），啟動 Claude Code",
+            "Clone Repo 到本機 — 告訴 Claude Code：「幫我把 github.com/[你的使用者名稱]/my-ai-study-notes clone 到桌面」。觀察：Claude Code 會執行一個 git clone 指令，把你的 Repo 完整複製到電腦上",
+            "解釋 Clone 跟一般下載的差異：Clone 保留了 Git 的所有歷史紀錄和跟 GitHub 的連結。一般下載只拿到檔案，沒有歷史紀錄，也不能 Push 回去",
+            "新增檔案 — 告訴 Claude Code：「在這個專案裡新增一個 day1-notes.md 檔案，內容是今天學到的 AI 基礎知識重點整理」。Claude Code 會自動建立檔案並寫入內容",
+            "跟 Claude Code 來回修改：「加上 LLM 擂台賽的結果」、「加上 Claude 產品的心得」、「把格式弄漂亮一點」。這就是用自然語言指揮 AI 寫程式的感覺",
+            "完成 Git 流程 — 告訴 Claude Code：「幫我把這些修改 commit 並 push 到 GitHub」。仔細觀察 Claude Code 執行的每一步：git add — 把檔案加入「準備存檔」的清單；git commit — 存檔，附上說明訊息；git push — 上傳到 GitHub 雲端",
+            "回到 GitHub 網頁驗證：重新整理 Repo 的頁面，你會看到 day1-notes.md 出現了！"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "「哇」時刻：你在 Terminal 裡用 AI 寫的東西，已經上傳到雲端了。全世界都能看到。這就是開發者每天的工作流程：寫程式 → 存檔 → 上傳。",
+          "variant": "success"
+        }
+      ]
+    },
+    {
+      "id": "8.8",
+      "title": "Branch 專題 —「平行宇宙」",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "這是整個模組 4 最重要的一節。Branch 是 Git 最強大也最容易搞混的概念，但一旦你搞懂它，你就掌握了 Git 的精髓。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Branch 是什麼？",
+          "text": "想像你在寫一篇作文，目前的版本你很滿意，但想試試看把結尾完全改掉。你不想直接改原本的版本，怕改壞了回不去。Branch 就是讓你「複製一條時間線」出來，在複製品上隨便改，原本的版本完全不受影響。"
+        },
+        {
+          "type": "keypoint",
+          "title": "為什麼不直接複製貼上就好？",
+          "text": "手動複製沒辦法追蹤「從哪裡分出去的」、「改了什麼」。Branch 厲害的地方：Git 會記住分支點、記住所有改動，最後還能把改動「合併」回來。如果你手動複製，改完要合併回去就得一行一行人工比對，非常容易出錯。"
+        },
+        {
+          "type": "keypoint",
+          "title": "main 是什麼？",
+          "text": "每個 Repo 都有一個預設的主分支，叫做 main。這是你的「正式版本」— 穩定的、確定沒問題的內容都放在 main。所有的實驗和開發都在其他 Branch 上做，做好了再合併回 main。"
+        },
+        {
+          "type": "keypoint",
+          "title": "什麼時候要開 Branch？",
+          "text": "想嘗試新東西，但不確定會不會搞砸 → 開 Branch。多人協作，每個人在自己的 Branch 上做事 → 不會互相干擾。做完、確認沒問題了 → 合併（Merge）回 main。"
+        },
+        {
+          "type": "paragraph",
+          "text": "概念講完了，現在用 Claude Code 親手操作，體驗那個「哇」的時刻："
+        },
+        {
+          "type": "steps",
+          "items": [
+            "確認目前位置 — 請 Claude Code：「確認我們目前在哪個 branch 上」。它會告訴你目前在 main branch。main 就是你的「正式版本」的時間線",
+            "開一條新 Branch — 請 Claude Code：「幫我建立一個叫 experiment 的新 branch 並切換過去」。命名慣例：用英文、短橫線分隔、名稱要描述用途（例如 add-math-notes、fix-typo）。現在你就像分裂出了一個平行宇宙 — experiment 跟 main 在這個瞬間是完全一樣的，但接下來的修改只會影響 experiment",
+            "在新 Branch 上做修改 — 請 Claude Code：「修改 day1-notes.md，在最後面加上一段『模組 3 Claude 產品心得』，寫幾句你覺得最酷的產品是哪個、為什麼」。Claude Code 會修改檔案內容",
+            "Commit 並 Push 這個 Branch — 請 Claude Code：「幫我把這些修改 commit 並 push 到 GitHub」。觀察：它 push 的不是 main，而是 experiment branch",
+            "切回 main — 這是最關鍵的一步！請 Claude Code：「切換回 main branch」",
+            "關鍵時刻 — 請 Claude Code：「顯示 day1-notes.md 的內容」。打開檔案看看 — 內容是舊的！剛才加的「模組 3 Claude 產品心得」不見了！",
+            "不要慌，這不是 bug。你剛才的修改存在 experiment branch 上，而你現在在 main branch。同一個資料夾、同一個檔案，切換 branch 後內容自動變回去。這就是「平行宇宙」的感覺 — 兩個時間線同時存在，互不干擾",
+            "合併（Merge）— 請 Claude Code：「把 experiment branch 合併回 main」。合併後再看 day1-notes.md：新內容出現了！兩個宇宙合而為一。experiment 上的修改被整合進了 main",
+            "回到 GitHub 網頁驗證 — 重新整理頁面，看到 branch 的紀錄、合併的紀錄都完整保留在 GitHub 上。點擊 Insights → Network 可以看到分支和合併的圖形化紀錄"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "這個「切換 branch 後檔案內容自動改變」的體驗，是整個課程中最重要的「哇」時刻之一。務必讓孩子親自操作、親自看到檔案內容變回去，然後合併後又變回來。這種親身體驗比任何解釋都有效。",
+          "variant": "info"
+        },
+        {
+          "type": "paragraph",
+          "text": "恭喜！你現在已經掌握了 Git 的核心概念。Repository、Commit、Push、Pull、Clone、Branch、Merge — 這些就是全世界開發者每天在用的工具。下一個模組，你會用這些技能完成自己的作品。"
+        }
+      ]
+    }
+  ]
+}

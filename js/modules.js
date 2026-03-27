@@ -108,7 +108,7 @@ const ModuleRenderer = {
                 ? `<a href="#/module/${data.id - 1}" class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">← 上一個模組</a>`
                 : '<div></div>'
               }
-              ${data.id < 5
+              ${data.id < 9
                 ? `<a href="#/module/${data.id + 1}" class="px-4 py-2 rounded-lg bg-primary-500 text-white hover:bg-primary-600 transition-colors">下一個模組 →</a>`
                 : `<a href="#/" class="px-4 py-2 rounded-lg bg-success-500 text-white hover:bg-success-400 transition-colors">🎉 回到首頁</a>`
               }

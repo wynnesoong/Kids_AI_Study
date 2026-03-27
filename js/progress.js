@@ -7,8 +7,12 @@ const Progress = {
     1: { title: 'AI 大發現', sections: ['1.1','1.2','1.3','1.4','1.5','1.6','1.7'], icon: '🧠', time: '40 min' },
     2: { title: 'LLM 擂台賽', sections: ['2.1','2.2','2.3','2.4','2.5','2.6'], icon: '⚔️', time: '40 min' },
     3: { title: 'Claude 全產品探索', sections: ['3.1','3.2','3.3','3.4','3.5','3.6','3.7','3.8','3.9'], icon: '🔧', time: '60 min' },
-    4: { title: 'GitHub + Claude Code', sections: ['4.1','4.2','4.3','4.4','4.5','4.6','4.7','4.8'], icon: '🚀', time: '70 min' },
-    5: { title: '我的 AI 作品', sections: ['5.1','5.2','5.3','5.4','5.5','5.6','5.7','5.8','5.9'], icon: '🎨', time: '50 min' },
+    4: { title: 'Claude 數據 & 文件魔法', sections: ['4.1','4.2','4.3','4.4'], icon: '📊', time: '50 min' },
+    5: { title: 'Claude AI 創意工作室', sections: ['5.1','5.2','5.3','5.4'], icon: '🎨', time: '50 min' },
+    6: { title: 'Claude AI 學習夥伴', sections: ['6.1','6.2','6.3','6.4'], icon: '📚', time: '50 min' },
+    7: { title: 'Gemini 生圖教學', sections: ['7.1','7.2','7.3','7.4'], icon: '🖼️', time: '40 min' },
+    8: { title: 'GitHub + Claude Code', sections: ['8.1','8.2','8.3','8.4','8.5','8.6','8.7','8.8'], icon: '🚀', time: '70 min' },
+    9: { title: '我的 AI 作品', sections: ['9.1','9.2','9.3','9.4','9.5','9.6','9.7','9.8','9.9'], icon: '🏆', time: '50 min' },
   },
 
   _load() {

@@ -43,6 +43,10 @@ const App = {
       '/module/3':  () => ModuleRenderer.render(3),
       '/module/4':  () => ModuleRenderer.render(4),
       '/module/5':  () => ModuleRenderer.render(5),
+      '/module/6':  () => ModuleRenderer.render(6),
+      '/module/7':  () => ModuleRenderer.render(7),
+      '/module/8':  () => ModuleRenderer.render(8),
+      '/module/9':  () => ModuleRenderer.render(9),
       '/achievements': () => Achievements.renderWall(),
       '/setup':        () => Components.renderSetupPage(),
     };
