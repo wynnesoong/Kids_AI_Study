@@ -1,0 +1,72 @@
+[
+  {
+    "id": "first_step",
+    "icon": "👣",
+    "title": "踏出第一步",
+    "description": "完成第一個章節",
+    "condition": { "type": "any_section" }
+  },
+  {
+    "id": "module1_done",
+    "icon": "🧠",
+    "title": "AI 啟蒙者",
+    "description": "完成模組 1：AI 大發現",
+    "condition": { "type": "module_complete", "moduleId": 1 }
+  },
+  {
+    "id": "module2_done",
+    "icon": "⚔️",
+    "title": "LLM 鑑賞家",
+    "description": "完成模組 2：LLM 擂台賽",
+    "condition": { "type": "module_complete", "moduleId": 2 }
+  },
+  {
+    "id": "module3_done",
+    "icon": "🔧",
+    "title": "Claude 達人",
+    "description": "完成模組 3：Claude 全產品探索",
+    "condition": { "type": "module_complete", "moduleId": 3 }
+  },
+  {
+    "id": "module4_done",
+    "icon": "🚀",
+    "title": "Git 冒險家",
+    "description": "完成模組 4：GitHub + Claude Code",
+    "condition": { "type": "module_complete", "moduleId": 4 }
+  },
+  {
+    "id": "module5_done",
+    "icon": "🎨",
+    "title": "AI 創作者",
+    "description": "完成模組 5：我的 AI 作品",
+    "condition": { "type": "module_complete", "moduleId": 5 }
+  },
+  {
+    "id": "half_way",
+    "icon": "🏔️",
+    "title": "半途不廢",
+    "description": "完成 50% 的課程進度",
+    "condition": { "type": "overall_percentage", "value": 50 }
+  },
+  {
+    "id": "all_done",
+    "icon": "👑",
+    "title": "AI 探索大師",
+    "description": "完成全部課程！",
+    "condition": { "type": "overall_percentage", "value": 100 }
+  },
+  {
+    "id": "three_modules",
+    "icon": "🔥",
+    "title": "三連勝",
+    "description": "完成任意 3 個模組",
+    "condition": { "type": "modules_completed_count", "value": 3 }
+  },
+  {
+    "id": "night_owl",
+    "icon": "🦉",
+    "title": "夜貓子學霸",
+    "description": "在深色模式下完成一個章節",
+    "condition": { "type": "dark_mode_section" }
+  }
+]
