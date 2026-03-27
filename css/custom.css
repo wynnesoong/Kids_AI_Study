@@ -1,0 +1,99 @@
+/* 成就彈出動畫 */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out;
+}
+
+/* 進度地圖連接線 */
+.module-connector {
+  position: relative;
+}
+.module-connector::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  width: 2px;
+  height: 2rem;
+  background: linear-gradient(to bottom, rgb(14, 165, 233), rgb(139, 92, 246));
+  opacity: 0.3;
+}
+.module-connector.completed::after {
+  opacity: 1;
+}
+
+/* 模組卡片 hover 效果 */
+.module-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -12px rgba(14, 165, 233, 0.3);
+}
+
+/* 章節完成打勾動畫 */
+@keyframes check-bounce {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.check-animated {
+  animation: check-bounce 0.3s ease-out;
+}
+
+/* Checkbox peer-checked: show checkmark SVG inside sibling div */
+input.section-check:checked + div > svg {
+  display: block !important;
+}
+
+/* Checkbox checked: change background of the indicator div */
+input.section-check:checked + div {
+  background-color: rgb(34, 197, 94);
+  border-color: rgb(34, 197, 94);
+}
+
+/* 成就徽章發光效果 */
+.badge-glow {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+/* 打字機效果 */
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.typing-cursor::after {
+  content: '|';
+  animation: blink-cursor 0.8s infinite;
+  color: rgb(14, 165, 233);
+}
+
+/* 頁面轉場 */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.page-enter {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* 進度環 */
+.progress-ring-circle {
+  transition: stroke-dashoffset 0.5s ease;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgb(156, 163, 175); border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: rgb(75, 85, 99); }
+
+/* 最後一個模組卡片不顯示連接線 */
+.module-connector.last::after {
+  display: none;
+}
