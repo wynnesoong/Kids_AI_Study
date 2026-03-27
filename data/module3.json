@@ -1,0 +1,292 @@
+{
+  "id": 3,
+  "title": "Claude 全產品探索",
+  "subtitle": "完整認識 Claude 生態系統的六大產品，每個都實際體驗",
+  "icon": "🔧",
+  "time": "60 分鐘",
+  "sections": [
+    {
+      "id": "3.1",
+      "title": "Claude 生態系統總覽",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Claude 不只是一個聊天機器人，它是一整套工具生態系統。不同的產品適合不同的使用情境，就像你有鉛筆、原子筆、毛筆 — 都能寫字，但各有各的強項。先來建立一個清楚的分類架構："
+        },
+        {
+          "type": "table",
+          "headers": ["產品", "定位", "適合誰"],
+          "rows": [
+            ["Claude AI（claude.ai）", "網頁版，直接對話、上傳檔案、分析圖片", "所有人"],
+            ["Claude Desktop", "電腦 App，可讀取本機檔案，整合日常工作流", "日常使用者"],
+            ["Claude Code", "終端機裡的 AI 程式助手，直接讀寫程式碼、執行指令", "開發者"],
+            ["Projects", "在 claude.ai 建立專案，整理文件和對話，AI 有持續記憶", "需要長期管理任務的人"],
+            ["Cowork", "Claude 在背景自動執行任務，完成後通知你", "想提升效率的人"],
+            ["Dispatch", "同時派出多個 Claude 平行處理不同任務", "進階使用者"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "接下來的三個章節會先幫你理解這些產品之間的關係，然後每一個都讓你親手操作。"
+        }
+      ]
+    },
+    {
+      "id": "3.2",
+      "title": "產品之間的關係",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "六個產品看起來很多，但其實有清楚的層次結構："
+        },
+        {
+          "type": "keypoint",
+          "title": "claude.ai 是大本營",
+          "text": "最基本的使用方式，打開瀏覽器就能用。大部分事情都能在這裡完成。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Desktop 是本機版",
+          "text": "跟 claude.ai 類似，但裝在電腦上，可以存取本機檔案。不用開瀏覽器，減少干擾。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Claude Code 是開發專用通道",
+          "text": "在終端機（Terminal）裡面跑，專門用來寫程式。它能直接讀寫你電腦上的程式碼、執行指令，是開發者的最愛。"
+        },
+        {
+          "type": "keypoint",
+          "title": "Projects / Cowork / Dispatch 是進階功能",
+          "text": "這三個是大本營裡的進階功能，讓 Claude 的能力延伸。Projects 給它記憶，Cowork 讓它背景工作，Dispatch 讓它分身處理多個任務。"
+        }
+      ]
+    },
+    {
+      "id": "3.3",
+      "title": "什麼時候用哪個",
+      "type": "learn",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "選擇哪個產品，取決於你想做什麼事。這裡有一個簡單的判斷指南："
+        },
+        {
+          "type": "steps",
+          "items": [
+            "想問一個問題、聊天 → Claude AI",
+            "要分析電腦裡的檔案 → Claude Desktop",
+            "寫程式、做開發 → Claude Code",
+            "長期專案、需要 AI 記住前面的內容 → Projects",
+            "給一個耗時任務讓 AI 在背景做 → Cowork",
+            "同時有好幾個任務要處理 → Dispatch"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "不需要一次全部學會。先熟悉 Claude AI 和 Desktop，遇到需求再學其他的。接下來每個產品我們都會實際操作一次，體驗它的特色。",
+          "variant": "tip"
+        }
+      ]
+    },
+    {
+      "id": "3.4",
+      "title": "Claude AI 體驗",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Claude AI（claude.ai）是整個生態系統的基礎，也是最通用的入口。前面的模組你已經用過了，這裡我們深入探索它的介面和功能。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "熟悉最基本的 Claude 介面，了解它不只能聊天，還能處理檔案和圖片。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "打開瀏覽器，進入 claude.ai（你應該已經登入了）",
+            "認識介面元素：對話視窗是你輸入文字跟 Claude 對話的地方；上方可以看到模型選擇，能切換 Opus / Sonnet / Haiku，跟模組 2 學的大中小模型對應；左下角有附件按鈕，可以上傳檔案和圖片",
+            "實際操作 — 上傳圖片分析：找一張照片（寵物、房間、窗外風景、或任何東西），用附件按鈕上傳，然後輸入：「請描述這張照片裡你看到了什麼，越詳細越好」。觀察 Claude 能多精確地描述圖片內容",
+            "實際操作 — 文章翻譯與文法分析：找一段英文文章（課本、網路文章都行），貼進對話視窗，輸入：「請幫我翻譯這段文章成繁體中文，然後挑出 3 個值得學的文法重點，解釋給國中生聽」",
+            "觀察 Claude 的回答：翻譯是否自然？文法解釋是否清楚？有沒有你覺得翻不好的地方？"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "學到什麼：claude.ai 是最通用的入口，文字對話、圖片分析、檔案處理大部分事情都能在這裡完成。",
+          "variant": "success"
+        }
+      ]
+    },
+    {
+      "id": "3.5",
+      "title": "Claude Desktop 體驗",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Claude Desktop 是安裝在電腦上的獨立 App，跟網頁版長得很像，但它跟你的電腦整合得更緊密。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "體會桌面版跟網頁版的差異 — 更方便、更流暢、更貼近日常使用。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "開啟 Claude Desktop App（應該已經在課前安裝好了，如果還沒安裝，先從 claude.ai 官網下載安裝）",
+            "介面導覽：跟 claude.ai 長得很像，但它是一個獨立的 App，不需要打開瀏覽器。注意看看有什麼不同的地方",
+            "實際操作 — 拖曳檔案：打開 Finder（Mac）或檔案總管（Windows），找一個檔案（PDF、文字檔、或任何文件），直接拖曳到 Claude Desktop 的對話視窗裡",
+            "輸入：「請幫我摘要這份文件的重點，用條列式整理」",
+            "感受差異：不用打開瀏覽器、不用點上傳按鈕、不用一步步選檔案，直接拖就好。操作流程更順暢"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "學到什麼：Desktop 版適合要頻繁使用 Claude 的人。它省去了開瀏覽器的步驟，也少了瀏覽器分頁的干擾，讓你能更專注。",
+          "variant": "success"
+        }
+      ]
+    },
+    {
+      "id": "3.6",
+      "title": "Projects 體驗",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "到目前為止，每次跟 Claude 對話都是「一次性」的 — 開一個新對話，Claude 就什麼都不記得了。Projects 改變了這件事：它讓 Claude 擁有「持續的記憶」。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "理解「專案」的概念 — AI 不只能單次對話，還能長期合作。Claude 可以記住你給它的背景資料，在同一個專案裡持續累積上下文。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "在 claude.ai 左側找到 Projects 選項，點擊建立新專案",
+            "命名為「我的 AI 學習筆記」— 這個名字要能讓你一看就知道是什麼",
+            "設定 Project Instructions（專案指令）：在設定區域輸入「你是我的學習助手，請用繁體中文回答，語氣輕鬆但有深度。我是一個正在學 AI 的學生，請根據我提供的資料來回答問題」。這段指令會影響 Claude 在這個專案裡的所有回答",
+            "上傳資料：把模組 2 做的 LLM 評分表上傳到這個 Project 裡。這就是給 Claude 的「記憶」",
+            "在 Project 裡跟 Claude 對話：輸入「請根據我的評分表，幫我整理一份 LLM 比較總結，列出每個 AI 的強項和弱項」",
+            "觀察關鍵差異：Claude 能引用你上傳的評分表資料來回答，而不是用通用知識。這就是 Project 的核心價值 — 持續的記憶和上下文",
+            "試試看再問一個問題：「根據我的測試結果，你覺得哪個 AI 最適合拿來做數學作業？」— Claude 會記得你的資料來回答"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "學到什麼：Projects 適合需要長期追蹤的任務。你可以把相關文件都放進去，Claude 不會每次都從零開始。這也是一種 Prompt 工程 — 用 Project Instructions 設定 AI 的角色和背景。",
+          "variant": "success"
+        }
+      ]
+    },
+    {
+      "id": "3.7",
+      "title": "Cowork 體驗",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "前面的使用方式都是「你等 Claude 回答」— 你送出訊息，盯著螢幕等它生成完畢。Cowork 不一樣：你丟一個任務給它，然後去做別的事，它在背景默默工作，完成後通知你。"
+        },
+        {
+          "type": "highlight",
+          "text": "注意：Cowork 需要 Claude Pro 以上方案才能使用。如果目前的帳號沒有這個功能，由講師示範畫面即可，不影響學習。",
+          "variant": "warning"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "體驗「讓 AI 在背景工作」的模式。這是一種全新的人機互動方式 — 你不用盯著它，它做完會告訴你。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "在 claude.ai 開啟一個對話",
+            "給 Claude 一個需要花點時間的任務。輸入：「請幫我整理一份完整的 AI 學習大綱，包含 10 個主題，每個主題列出 3 個重點和 2 個練習活動。格式要整齊，用 Markdown 表格呈現」",
+            "在回答生成時，注意介面上的 Cowork 選項（通常在對話視窗旁邊或上方，具體位置可能隨版本更新變動 — 如果找不到，問講師）",
+            "啟用 Cowork 模式：觀察到你可以切到其他分頁或開新對話，Claude 在背景繼續工作，不會因為你離開就停止",
+            "完成時你會收到通知，回來看結果。比較一下：如果你一直盯著等，跟讓它背景做、你去做別的事，哪種方式更有效率？"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "學到什麼：Cowork 讓你不用盯著 AI 等回答，適合比較大的任務。想像一下：你可以同時寫作業，讓 Claude 在背景幫你整理筆記。",
+          "variant": "success"
+        }
+      ]
+    },
+    {
+      "id": "3.8",
+      "title": "Dispatch 體驗",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "如果 Cowork 是「讓一個 Claude 在背景做一件事」，那 Dispatch 就是「同時派出好幾個 Claude，各做各的事」。就像同時有好幾個助手幫你做不同的事。"
+        },
+        {
+          "type": "highlight",
+          "text": "注意：Dispatch 需要 Claude Pro 以上方案才能使用。如果目前的帳號沒有這個功能，由講師示範畫面即可，不影響學習。",
+          "variant": "warning"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "體驗「同時派出多個 Claude」的威力 — 平行處理多個任務，大幅提升效率。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "在 claude.ai 找到 Dispatch 功能入口（通常在左側欄或對話選單中，具體位置可能隨版本更新變動 — 如果找不到，問講師）",
+            "準備一段文字（可以用前面模組寫的自我介紹或任何一段文章）",
+            "建立多個平行任務：任務 A — 把這段中文翻譯成英文；任務 B — 用這段文字的主題寫一首短詩；任務 C — 列出這段文字中提到的所有關鍵概念並逐一解釋",
+            "同時啟動三個任務，觀察：三個任務同時在跑，不用排隊等一個做完才做下一個",
+            "結果出來後，比較三個不同方向的產出。思考：如果一個一個做，要花多少時間？Dispatch 幫你省了多少時間？"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "學到什麼：Dispatch 就像同時有好幾個助手幫你做不同的事。當你有多個獨立的任務要處理時，Dispatch 能大幅節省時間。",
+          "variant": "success"
+        }
+      ]
+    },
+    {
+      "id": "3.9",
+      "title": "Claude Code 預告",
+      "type": "play",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "最後一個產品 — Claude Code。它跟前面的都不一樣：不是在瀏覽器裡用，也不是一個有圖形介面的 App，而是在終端機（Terminal）裡面跑。這是開發者的工具，也是下一個模組的主角。"
+        },
+        {
+          "type": "keypoint",
+          "title": "目的",
+          "text": "認識 Claude Code 的介面和基本概念，為模組 4「GitHub 冒險 + Claude Code」做準備。"
+        },
+        {
+          "type": "steps",
+          "items": [
+            "打開 Terminal（Mac 的終端機）：可以在 Spotlight 搜尋「Terminal」或到「應用程式 → 工具程式 → 終端機」找到它",
+            "認識 Terminal：這裡跟你平常用的 App 完全不同，沒有按鈕、沒有圖示，只有文字。你用打字跟電腦溝通，電腦也用文字回答你。開發者很多時候偏好這種方式，因為更快、更精確",
+            "展示 Claude Code 的啟動方式：在 Terminal 裡輸入啟動指令（課前已設定好），看到 Claude Code 的歡迎畫面",
+            "展示基本互動：問 Claude Code 一個簡單問題，例如「今天是星期幾？」，看它在 Terminal 裡怎麼回答。注意跟網頁版的差異 — 這裡沒有漂亮的氣泡和格式，一切都是純文字",
+            "重點預告：Claude Code 最厲害的地方不是聊天，而是它能直接讀寫你電腦上的檔案、執行程式指令。它就像一個住在你電腦裡的程式設計師助手。下個模組我們會用它來操作 Git 和 GitHub，完成真正的開發工作"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "學到什麼：Claude Code 是開發者的工具，用文字指令操作，能力比網頁版更強大。它能直接讀寫檔案和執行指令，這是其他 Claude 產品做不到的。下個模組你就會親手體驗它的威力。",
+          "variant": "success"
+        }
+      ]
+    }
+  ]
+}
