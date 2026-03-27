@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "title": "AI 大發現",
+  "subtitle": "建立對 AI 的正確認知，體驗 AI 的真正實力",
+  "icon": "🧠",
+  "time": "40 分鐘",
+  "sections": [
+    {
+      "id": "1.1",
+      "title": "AI 的本質",
+      "type": "learn",
+      "content": [
+        { "type": "paragraph", "text": "AI 是一種「從大量資料中找出規律」的程式。" },
+        { "type": "highlight", "text": "重點：傳統程式 = 人寫規則；AI = 從資料學規則", "variant": "info" }
+      ]
+    },
+    {
+      "id": "1.2",
+      "title": "大語言模型怎麼運作",
+      "type": "learn",
+      "content": [
+        { "type": "paragraph", "text": "LLM 的核心能力就是預測下一個字。" },
+        { "type": "keypoint", "title": "什麼是 Token？", "text": "AI 把文字切成小碎片（Token），中文大約一個字是一個 Token。" }
+      ]
+    }
+  ]
+}
